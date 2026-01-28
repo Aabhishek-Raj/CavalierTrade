@@ -22,7 +22,7 @@ Each microservice is stored in its **own Git branch**, not in separate folders w
 - `auth-service/main`
 - `client-service/main`
 # feature branches
-- `product-service/feat/image-upload`
+- `stock-service/feat/image-upload`
 - `payment-service/fix/race-condition`
 
 --------------------------------------------------------
@@ -128,7 +128,7 @@ Use **Conventional Commit** format to ensure consistency and readability:
 feat(auth): add JWT auth middleware
 fix(client): handle form validation edge case
 chore(init): readme added
-refactor(product): split controller logic
+refactor(stock): split controller logic
 test(auth): add unit tests for login
 ```
 
@@ -171,7 +171,7 @@ git checkout -b master
 
 git merge auth-service/main --allow-unrelated-histories
 git merge client-service/main --allow-unrelated-histories
-git merge product-service/main --allow-unrelated-histories
+git merge stock-service/main --allow-unrelated-histories
 
 ## Resolve any conflicts manually.
 
